@@ -19,3 +19,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://vivblind.play2pay.me/')
+
+WebUI.setText(findTestObject('Test1/Page_/input_EMAIL'), 'admin@bda.com')
+
+WebUI.setText(findTestObject('Test1/Page_/input_password'), 'admin')
+
+WebUI.submit(findTestObject('Test1/Page_/form_form-horizontal'))
+
+WebUI.closeBrowser()
+
